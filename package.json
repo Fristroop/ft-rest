@@ -1,0 +1,44 @@
+{
+  "name": "ft-rest",
+  "version": "1.1.0",
+  "description": "A module for working with Rest API's ",
+  "main": "dist/index.js",
+  "types": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "relase": "npm publish",
+    "build": "rimraf dist && tsc",
+    "test": "node ./tests/index.js",
+    "docs": "typedoc src/index.ts src/types/index.ts --readme"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fristroop/ft-rest.git"
+  },
+  "keywords": [
+    "rest",
+    "axios",
+    "api"
+  ],
+  "author": "https://github.com/AydinTheFirst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fristroop/ft-rest/issues"
+  },
+  "homepage": "https://github.com/Fristroop/ft-rest#readme",
+  "dependencies": {
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.5",
+    "typedoc": "^0.25.3"
+  }
+}
