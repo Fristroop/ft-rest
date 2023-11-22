@@ -1,5 +1,4 @@
 import axios, { AxiosResponse } from "axios";
-import { URLSearchParams } from "url";
 
 import { RequestMethods } from "./enums.js";
 import { RestConfig, RestResponse, RestError } from "./types/index.js";

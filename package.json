@@ -1,6 +1,6 @@
 {
   "name": "ft-rest",
-  "version": "1.1.0",
+  "version": "1.1.5",
   "description": "A module for working with Rest API's ",
   "main": "dist/index.js",
   "types": "dist/index.js",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "relase": "npm publish",
+    "relase": "npm run build && npm publish",
     "build": "rimraf dist && tsc",
     "test": "node ./tests/index.js",
     "docs": "typedoc src/index.ts src/types/index.ts --readme"
